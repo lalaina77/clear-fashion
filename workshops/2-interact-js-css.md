@@ -53,8 +53,15 @@ nothing to commit, working tree clean
 2. **Pull** the `master` branch to update your local with the new remote changes
 
 ```sh
+<<<<<<< HEAD
 ❯ git fetch origin
 ❯ git pull origin master
+=======
+❯ git remote add upstream git@github.com:92bondstreet/clear-fashion.git
+## or ❯ git remote add upstream https://github.com/92bondstreet/clear-fashion
+❯ git fetch upstream
+❯ git pull upstream master
+>>>>>>> d721a0f068952a97d3bcba8eddcfd8b826ad20f9
 ```
 
 4. **Open the entry point [../client/index.html](../client/index.html)** in your browser (that loads the [../client/portfolio.js](../client/portfolio.js) file)
